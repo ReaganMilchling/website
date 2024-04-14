@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+:root {
+  //background: linear-gradient(to bottom,  #cfe7fa 30%,#cfe7fa 45%,#6393c1 98%);
+  background-image: url(backgrounds/triangle-mosaic.webp);
+  background-repeat:repeat;
+}
+.container {
+  margin-top: 10vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  height: 80vh;
+
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  background-color: #333;
+}
+
+img {
+  padding-top: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+}
+li a {
+  height: 100%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
