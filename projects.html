@@ -8,23 +8,41 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header id="navbar">
+    <header class="navbar">
       <ul>
-        <li id="nav-block"><a href="home.html">About</a></li>
-        <li id="nav-block"><a href="resume.html">Resume</a></li>
-        <li id="nav-block"><a href="projects.html">Code Projects</a></li>
-        <li id="nav-block"><a href="photos.html">Car & Nature</a></li>
-        <li style="float:right"><a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a></li>
-        <li style="float:right"><a href="https://www.linkedin.com/in/milchlingreagan/" class="fa fa-lg fa-linkedin"></a></li>
-        <li style="float:right"><a href="https://github.com/ReaganMilchling" class="fa fa-lg fa-github"></a></li>
+        <li class="nav-block"><a href="home.html">About</a></li>
+        <li class="nav-block"><a href="resume.html">Resume</a></li>
+        <li class="nav-block"><a href="projects.html">Code Projects</a></li>
+        <li class="nav-block"><a href="photos.html">Random Photography</a></li>
+        <li class="nav-block nav-icon"><a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a></li>
+        <li class="nav-block nav-icon"><a href="https://www.linkedin.com/in/milchlingreagan/" class="fa fa-lg fa-linkedin"></a></li>
+        <li class="nav-block nav-icon"><a href="https://github.com/ReaganMilchling" class="fa fa-lg fa-github"></a></li>
       </ul>
     </header>
     <div class="container">
       <h1>Projects</h1>
-      <h4>Source is available on github for all</h4>
+      <div>
+        <p>Head to my github for source code. All of these are pinned.</p>
+      </div>
+      <br>
       <h3>Voxel video game</h3>
-      <h3>TDF IDF in C</h3>
-      <h3>RSA stuff</h3>
+      <div class="content">
+        <p>This is the latest video game I've been working on. It is a voxel based renderer written in C++ using OpenGL and CMake. I am trying to keep the number of libraries I use to minimum because I like writing things myself.</p>
+        <p>Here's a few pictures. It looks suspiciously like Minecraft. I was quite stunned at how easy it was to imitate Minecraft's water look. I clearly haven't figured out how to shade the voxel sides different colors nor implement ambient occlusion.</p>
+        <img src="pictures/voxelterrain.png" alt="Terrain">
+        <img src="pictures/voxelcaves.png" alt="Cave Slice">
+      </div>
+      <br>
+      <h3>TDF IDF search engine in C</h3>
+      <div class="content">
+        <p>In College I took a class called Information Retrieval. The class was basically a semester long project on building a search engine. I originally wrote it in (some terrible) Python code.</p>
+        <p>I wanted to challenge myself so I decided to rewrite it in C. And I took the oppurtunity to write generic hashmaps in C. I also improved single thread parsing time 25x, which was pretty satisfying.</p>
+      </div>
+      <br>
+      <h3>RSA Keypair Generation</h3>
+      <div class="content">
+        <p>Another College project. This one I haven't rewritten. It can generate RSA key-pairs and crack given a RSA key-pair (only if it has a few hundred bits).</p>
+      </div>
     </div>
   </body>
 </html>
