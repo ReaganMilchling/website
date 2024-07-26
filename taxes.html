@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Taxes</title>
-    <script type="text/javascript" src="taxes.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -17,24 +16,31 @@
         <li class="nav-block"><a href="home.html">About</a></li>
         <li class="nav-block"><a href="resume.html">Resume</a></li>
         <li class="nav-block"><a href="projects.html">Code Projects</a></li>
-        <li class="nav-block"><a href="photos.html">Car & Nature</a></li>
-        <li class="nav-block"><a href="taxes.html">Taxes</a></li>
-        <li class="nav-icon"><a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a></li>
-        <li class="nav-icon"><a href="https://www.linkedin.com/in/milchlingreagan/" class="fa fa-lg fa-linkedin"></a></li>
-        <li class="nav-icon"><a href="https://github.com/ReaganMilchling" class="fa fa-lg fa-github"></a></li>
+        <li class="nav-block nav-icon"><a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a></li>
+        <li class="nav-block nav-icon"><a href="https://www.linkedin.com/in/milchlingreagan/" class="fa-brands fa-linkedin"></a></li>
+        <li class="nav-block nav-icon"><a href="https://github.com/ReaganMilchling" class="fa-brands fa-github"></a></li>
       </ul>
     </header>
     <main class="container">
       <h1>Taxes calculator</h1>
-      <form>
+      <div>
         <label>Gross:</label>
-        <input type="text" id="gross" oninput="calcFederal(this)"><br>
+        <input type="text" id="grossinput" value="">
+        <br>
         <label>401k Contributions:</label>
-        <input type="text" id="401k"><br>
-      </form>
-      <div id="fed">ghksdgksj</div>
+        <input type="text" id="401k">
+        <br>
+      </div>
+      <label>
+        Take Home:
+        <p id="takehome"></p>
+        Fed:
+        <p id="feddisplay"></p>
+      </label>
     </main>
     <footer></footer>
+
+    <script type="text/javascript" src="taxes.js"></script>
   </body>
 </html>
 
