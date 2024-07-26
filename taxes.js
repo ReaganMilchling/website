@@ -1,21 +1,31 @@
 const gross = document.getElementById('grossinput');
 
 function handleGross(e) {
+    const ficaTaxRate = 0.0765;
     const gross = e.target.value;
     const fed = calcFederal(gross);
-    if (fed === '' || fed == null) {
+
+    let fica = gross * ficaTaxRate;
+    if (gross > 168600) {
+        fica = 168600 * ficaTaxRate;
+    }
+
+    if (gross === '' || gross == null) {
         return;
     }
 
-    document.getElementById("feddisplay").innerHTML = numberWithCommas(fed);
-    document.getElementById("takehome").innerHTML = numberWithCommas(Number(gross) - Number(fed));
+    const takeHome = gross - fica - fed;
+
+    document.getElementById("fed").innerHTML = numberWithCommas(fed);
+    document.getElementById("fica").innerHTML = numberWithCommas(fica);
+    document.getElementById("takehome").innerHTML = numberWithCommas(takeHome);
 }
 
 
 function calcFederal(gross) {
     let ret = 0;
-    let curr = gross;
 
+    const fed23Deduction = 13850;
     const fed23tax = [
         [0.10, 0, 1100],
         [0.12, 11001, 44725],
@@ -24,6 +34,11 @@ function calcFederal(gross) {
         [0.35, 231251, 578125],
         [0.37, 578126, -1]
     ]
+
+    if (gross < fed23Deduction) {
+        return 0;
+    }
+    let curr = gross - fed23Deduction;
 
     fed23tax.forEach(rate => {
         if (curr > rate[2] && rate[2] != -1) {

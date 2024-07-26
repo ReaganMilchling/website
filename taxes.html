@@ -22,21 +22,37 @@
       </ul>
     </header>
     <main class="container">
-      <h1>Taxes calculator</h1>
-      <div>
-        <label>Gross:</label>
-        <input type="text" id="grossinput" value="">
-        <br>
-        <label>401k Contributions:</label>
-        <input type="text" id="401k">
-        <br>
+      <div class="taxes-class">
+        <h1>Taxes calculator</h1>
+        <h5>Please do not trust this calculator for your real taxes. This is just a ballpark estimator.</h5>
+        <h5>This assumes a standard deduction.</h5>
+        <div class="calc">
+          <div class="form-input">
+            <label>Gross: </label>
+            <input type="text" id="grossinput" value="">
+            <br>
+            <label>401k Contributions: </label>
+            <input type="text" id="401k">
+            <br>
+          </div>
+          <div class="label-thing">
+            <div>Take Home: </div>
+            <div id="takehome"></div>
+          </div>
+          <div class="label-thing">
+            <div>Fed:  </div>
+            <div id="fed"></div>
+          </div>
+          <div class="label-thing">
+            <div>FICA: </div>
+            <div id="fica"></div>
+          </div>
+          <div class="label-thing">
+            <div>MD: </div>
+            <div id="state">Not implemented</div>
+          </div>
+        </div>
       </div>
-      <label>
-        Take Home:
-        <p id="takehome"></p>
-        Fed:
-        <p id="feddisplay"></p>
-      </label>
     </main>
     <footer></footer>
 
