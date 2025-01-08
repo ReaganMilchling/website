@@ -13,25 +13,22 @@
   <body>
     <header id="navbar">
       <ul>
-        <li class="nav-block"><a href="home.html">About</a></li>
+        <li class="nav-block"><a href="index.html">About</a></li>
         <li class="nav-block"><a href="resume.html">Resume</a></li>
         <li class="nav-block"><a href="projects.html">Code Projects</a></li>
-        <li class="nav-block nav-icon"><a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a></li>
-        <li class="nav-block nav-icon"><a href="https://www.linkedin.com/in/milchlingreagan/" class="fa-brands fa-linkedin"></a></li>
-        <li class="nav-block nav-icon"><a href="https://github.com/ReaganMilchling" class="fa-brands fa-github"></a></li>
       </ul>
     </header>
     <main class="container">
       <div class="taxes-class">
         <h1>Taxes calculator</h1>
-        <h5>Please do not trust this calculator for your real taxes. This is just a ballpark estimator.</h5>
-        <h5>This assumes a standard deduction.</h5>
+        <h5>This is just a ballpark estimator.</h5>
+        <h5>This assumes a standard deduction for Maryland and Federal.</h5>
         <div class="calc">
           <div class="form-input">
-            <label>Gross: </label>
+            <label>Gross:  </label>
             <input type="text" id="grossinput" value="">
             <br>
-            <label>401k Contributions: </label>
+            <label>401k Contributions:  </label>
             <input type="text" id="401k">
             <br>
           </div>
@@ -49,7 +46,11 @@
           </div>
           <div class="label-thing">
             <div>MD: </div>
-            <div id="state">Not implemented</div>
+            <div id="state"></div>
+          </div>
+          <div class="label-thing">
+            <div>Baltimore County: </div>
+            <div id="local"></div>
           </div>
         </div>
       </div>
