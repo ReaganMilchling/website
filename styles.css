@@ -8,6 +8,7 @@ body {
   background: #efefef;
   margin: 0;
   display: block;
+  min-height: 100%;
   overflow: auto;
 }
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Taxes</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab">
     <link rel="stylesheet" href="styles.css">
@@ -11,7 +12,7 @@
   :root {background-image: url(backgrounds/denim.webp);}
   </style>
   <body>
-    <header id="navbar">
+    <header class="navbar">
       <ul>
         <li class="nav-block"><a href="index.html">About</a></li>
         <li class="nav-block"><a href="resume.html">Resume</a></li>
@@ -21,8 +22,8 @@
     <main class="container">
       <div class="taxes-class">
         <h1>Taxes calculator</h1>
-        <h5>This is just a ballpark estimator.</h5>
-        <h5>This assumes a standard deduction for Maryland and Federal.</h5>
+        <h5>Ballpark estimaor for Maryland.</h5>
+        <h6>Assumes a standard deduction for Maryland and Federal, 1 MD exemption, and 0.032 rate for local.</h6>
         <div class="calc">
           <div class="form-input">
             <label>Gross:  </label>
@@ -49,7 +50,7 @@
             <div id="state"></div>
           </div>
           <div class="label-thing">
-            <div>Baltimore County: </div>
+            <div> Local: </div>
             <div id="local"></div>
           </div>
         </div>
