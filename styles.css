@@ -1,39 +1,48 @@
+:root {
+  --onyx: #3E3E3E;
+  --eerie: #252525;
+  --black-pearl: #051024;
+  --night: #131313;
+  --midnight: #061831;
+  --gunmetal: #223546;
+
+  --test: #222831;
+  --test2: #393E46;
+
+  --anti-flash-white: #f2f3f4;
+  --white: #e2e2e2;
+  --soft-white: ;
+  --ghost-white: #F8F8FF;
+  --ivory: #FFFFF0;
+}
+
 html {
   height: 100%;
+  background: var(--test2);
 }
 
 body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
   border-radius: 7px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  background: #efefef;
-  margin: 0;
-  display: block;
-  min-height: 100%;
-  overflow: auto;
 }
 
-@media (min-width: 641px) {
-  :root {
-    margin: 0 28vw;
-    font-size: larger;
-    #background: linear-gradient(to bottom,  #cfe7fa 30%,#cfe7fa 45%,#6393c1 98%);
-    background-image: url(backgrounds/triangle-mosaic.webp);
-    background-repeat: repeat;
-  }
+header {
+  min-height: 50px;
 }
 
-@media (max-width: 641px) {
-  :root {
-    margin: 0;
-    background-color: lightblue !important;
-  }
+footer {
+  min-height: 50px;
 }
 
 .taxes-class {
   margin: 10% auto;
   max-width: 100%;
-  background-color: white;
 
   .calc {
     .label-thing {
@@ -54,24 +63,31 @@ h1, h2 {
   margin: 0px auto;
   display: inline-block;
 }
-
+hr.rounded {
+  max-width: 95%;
+}
 .container {
-  margin: 0 7%;
+  margin: 0 25%;
   height: 100%;
+  font-size: 1.5em;
+  color: var(--ghost-white);
+  box-shadow: 5px 0 5px -2px rgba(0,0,0,0.75);
 }
 .content {
+  margin: 0% 5%;
   text-align: left;
 }
 .navbar {
   height: 5vh;
   min-height: 60px;
   box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-  background-color: #333;
+  background-color: var(--test);
   border-radius: 5px;
 }
 img {
   padding-top: 15px;
-  max-width: 100%;
+  margin: 2.5%;
+  max-width: 95%;
   height: auto;
 }
 ul {
@@ -87,19 +103,21 @@ li a {
   text-decoration: none;
 }
 a:hover {
-  color: #111;
+  color: var(--night);
 }
 a {
-  color: #111;
+  color: var(--night);
   text-decoration: none;
   padding: 5px;
 }
 .nav-block {
-  float: left;
   height: 100%;
-  display: block;
+  display: inline-block;
   margin: 20px 20px;
 }
 .nav-icon {
   float: right;
+}
+.small {
+  font-size: 0.25em;
 }
