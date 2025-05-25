@@ -8,45 +8,58 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="navbar">
-      <ul>
-        <li class="nav-block"><a href="index.html">About</a></li>
-        <li class="nav-block"><a href="resume.html">Resume</a></li>
-        <li class="nav-block"><a href="projects.html">Code Projects</a></li>
-      </ul>
-    </header>
-    <div class="container">
-      <div class="content">
-        <br>
-        <h1>Projects</h1>
+    <div class="flex-container">
+      <div class="flex-left">
+        <h2>Collection of coding adventures</h2>
         <hr class="rounded">
-        <p>Head to my github for source code. All of these are pinned.</p>
+        <div class="content">
+          <p>These are my favorite projects that I work on when I have the time or the desire. They're all just for fun.</p>
+        </div>
+        <h3>Voxel video game</h3>
+        <div class="content">
+          <p>This is the latest video game I've been working on. It is a voxel based renderer written in C++ using OpenGL and CMake.</p>
+          <p>Here's a few pictures. It looks suspiciously like Minecraft.</p>
+          <img src="pictures/voxelterrain.png" alt="Terrain">
+          <img src="pictures/voxelcaves.png" alt="Cave Slice">
+        </div>
+        <br>
+        <h3>TDF IDF search engine in C</h3>
+        <div class="content">
+          <p>The original project was a from a college course that had semester long project on building a search engine. Originally written in Python.</p>
+          <p>I rewrote it in C as a fun challenge and I took the oppurtunity to write generic hashmaps in C. I improved single thread parsing time 25x by naively rewriting.</p>
+        </div>
+        <br>
+        <h3>Http Server in C</h3>
+        <div class="content">
+          <p>Writing an http server in C. Goal is to implement the minimum required to test this website on a local network.</p>
+        </div>
+        <br>
+        <h3>RSA Keypair Generation</h3>
+        <div class="content">
+          <p>Another College project. This rewrite is in progress. The new goal is to implement ssh-keygen. It can generate RSA key-pairs and crack given an RSA key-pair (only if it has a few hundred bits).</p>
+        </div>
+        <br><br><br>
       </div>
-      <br>
-      <h3>Voxel video game</h3>
-      <div class="content">
-        <p>This is the latest video game I've been working on. It is a voxel based renderer written in C++ using OpenGL and CMake.</p>
-        <p>Here's a few pictures. It looks suspiciously like Minecraft.</p>
-        <img src="pictures/voxelterrain.png" alt="Terrain">
-        <img src="pictures/voxelcaves.png" alt="Cave Slice">
+      <div class="flex-right">
+        <ul class="content">
+          <li class="nav-block"><u>Reagan Milchling</u></li>
+          <li class="nav-block"><a href="index.html">About</a></li>
+          <li class="nav-block"><a href="resume.html">Resume</a></li>
+          <li class="nav-block"><a href="projects.html">Code Projects</a></li>
+          <li class="nav-block"><a href="keyboard.html">Keyboard</a></li>
+          <li class="nav-block"><a href="taxes.html">Taxes</a></li>
+          <br>
+          <li class="nav-block"><p>Connect below:</p></li>
+          <li class="nav-block">
+            <a href="mailto:milchlingreagan@gmail.com" class="fa fa-lg fa-envelope"></a>
+            <a href="https://www.linkedin.com/in/milchlingreagan/" class="fa-brands fa-lg fa-linkedin"></a>
+          </li>
+          <li class="nav-block">
+            <a href="https://github.com/ReaganMilchling" class="fa-brands fa-lg fa-github"></a>
+            <a href="https://www.strava.com/athletes/89596249" class="fa-brands fa-lg fa-strava"></a>
+          </li>
+        </ul>
       </div>
-      <br>
-      <h3>TDF IDF search engine in C</h3>
-      <div class="content">
-        <p>The original project was a from a college course that had semester long project on building a search engine. Originally written in Python.</p>
-        <p>I rewrote it in C as a fun challenge and I took the oppurtunity to write generic hashmaps in C. I improved single thread parsing time 25x by naively rewriting.</p>
-      </div>
-      <br>
-      <h3>Http Server in C</h3>
-      <div class="content">
-        <p>Writing an http server in C. Goal is to implement the minimum required to test this website on a local network.</p>
-      </div>
-      <br>
-      <h3>RSA Keypair Generation</h3>
-      <div class="content">
-        <p>Another College project. This rewrite is in progress. The new goal is to implement ssh-keygen. It can generate RSA key-pairs and crack given an RSA key-pair (only if it has a few hundred bits).</p>
-      </div>
-      <br><br><br>
     </div>
   </body>
 </html>
